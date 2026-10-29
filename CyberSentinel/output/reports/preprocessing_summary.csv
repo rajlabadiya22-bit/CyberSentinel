@@ -1,0 +1,2 @@
+original_count,duplicates_removed,bad_dates_excluded,categories_remapped,missing_values_filled,final_count,records_lost,retention_rate_pct,cleaning_timestamp,raw_row_count,clean_row_count,data_completeness_pct,report_generated_at
+2434,16,0,0,0,2418,16,99.34,2026-10-26 21:08:40,2434,2418,99.34,2026-10-26 21:08:40

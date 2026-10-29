@@ -1,0 +1,6 @@
+rank,threat_type,incident_count,percentage,cumulative_percentage,data_source
+1,Other,704,28.92,28.92,SYNTHETIC
+2,Phishing,666,27.36,56.28,SYNTHETIC
+3,Malware,519,21.32,77.6,SYNTHETIC
+4,Ransomware,282,11.59,89.19,SYNTHETIC
+5,Data Breach,263,10.81,100.0,SYNTHETIC

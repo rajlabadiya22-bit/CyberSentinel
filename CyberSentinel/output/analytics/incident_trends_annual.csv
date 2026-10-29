@@ -1,0 +1,5 @@
+year,incident_count,count_previous_year,yoy_change_absolute,yoy_change_pct,data_source
+2021,493,,,,SYNTHETIC
+2022,490,493.0,-3.0,-0.61,SYNTHETIC
+2023,681,490.0,191.0,38.98,SYNTHETIC
+2024,770,681.0,89.0,13.07,SYNTHETIC

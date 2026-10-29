@@ -1,0 +1,49 @@
+2026-10-25 18:19:20  INFO      Loading incident file: synthetic_india_incidents.csv
+2026-10-25 18:19:20  INFO        Column validation passed. All 6 required columns are present.
+2026-10-25 18:19:20  INFO        Import logged to import_log.txt
+2026-10-25 18:19:20  INFO        [OK] Loaded 2,500 rows from synthetic_india_incidents.csv (9 columns)
+2026-10-25 18:19:20  INFO      Starting incident data cleaning pipeline...
+2026-10-25 18:19:20  INFO        Input rows: 2,500
+2026-10-25 18:19:20  INFO        Removed 66 duplicate records.
+2026-10-25 18:19:40  INFO      Loading incident file: synthetic_india_incidents.csv
+2026-10-25 18:19:40  INFO        Column validation passed. All 6 required columns are present.
+2026-10-25 18:19:40  INFO        Import logged to import_log.txt
+2026-10-25 18:19:40  INFO        [OK] Loaded 2,500 rows from synthetic_india_incidents.csv (9 columns)
+2026-10-25 18:19:40  INFO      Starting incident data cleaning pipeline...
+2026-10-25 18:19:40  INFO        Input rows: 2,500
+2026-10-25 18:19:40  INFO        Removed 66 duplicate records.
+2026-10-25 18:19:40  INFO        Date standardisation complete for 'incident_date'. 2,434 records retained.
+2026-10-25 18:19:40  WARNING     Remapping 339 threat_type values to 'Other': ['Ddos', 'Sql Injection']
+2026-10-25 18:19:40  INFO        Taxonomy mapping complete — 339 values remapped.
+2026-10-25 18:19:40  INFO        No missing values found in optional columns.
+2026-10-25 18:19:40  INFO        Output rows: 2,434
+2026-10-25 18:19:40  INFO        Cleaning report saved to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports\incidents\preprocessing_summary.csv
+2026-10-25 18:19:40  INFO      Loading CVE dataset: cisa_kev.csv
+2026-10-25 18:19:40  INFO        Detected CISA KEV format. Remapping columns...
+2026-10-25 18:19:40  INFO        Column remap complete.
+2026-10-25 18:19:40  INFO        Column validation passed. All 2 required columns are present.
+2026-10-25 18:19:40  INFO        Import logged to import_log.txt
+2026-10-25 18:19:40  INFO        [OK] Loaded 1,756 CVE records from cisa_kev.csv
+2026-10-25 18:19:40  INFO      Starting CVE data cleaning pipeline...
+2026-10-25 18:19:40  INFO        Input CVE rows: 1,756
+2026-10-25 18:19:40  INFO        Date standardisation complete for 'published_date'. 1,756 records retained.
+2026-10-25 18:19:40  INFO        Output CVE rows: 1,756
+2026-10-25 18:19:40  INFO        Cleaning report saved to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports\kev\preprocessing_summary.csv
+2026-10-25 18:19:40  INFO      Loading CVE dataset: nvd_cve.csv
+2026-10-25 18:19:40  INFO        Column validation passed. All 4 required columns are present.
+2026-10-25 18:19:40  INFO        Import logged to import_log.txt
+2026-10-25 18:19:40  INFO        [OK] Loaded 6,135 CVE records from nvd_cve.csv
+2026-10-25 18:19:40  INFO      Starting CVE data cleaning pipeline...
+2026-10-25 18:19:40  INFO        Input CVE rows: 6,135
+2026-10-25 18:19:40  INFO        Date standardisation complete for 'published_date'. 6,135 records retained.
+2026-10-25 18:19:40  INFO        CVSS severity distribution after normalisation:
+  {'Medium': 2922, 'High': 2231, 'Critical': 619, 'Low': 231, 'Unknown': 132}
+2026-10-25 18:19:40  INFO        Filled 132 missing CVSS scores with 0.0 and set severity to 'Unknown'.
+2026-10-25 18:19:40  INFO        Output CVE rows: 6,135
+2026-10-25 18:19:40  INFO        Cleaning report saved to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports\nvd\preprocessing_summary.csv
+2026-10-25 18:19:40  INFO      Connected to database: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\database\nctirap.db
+2026-10-25 18:19:40  INFO      Database tables initialised (or already exist).
+2026-10-25 18:19:40  INFO      Inserting cleaned records into the INCIDENTS table...
+2026-10-25 18:19:40  INFO        Inserted 2,434 new incident records into INCIDENTS table (0 duplicates skipped, 0 FK errors skipped).
+2026-10-25 18:19:40  INFO      Inserting CVE records into the CVE_RECORDS table...
+2026-10-25 18:19:40  INFO        Inserted CVE records: attempted 7,861, skipped (malformed IDs): 0.

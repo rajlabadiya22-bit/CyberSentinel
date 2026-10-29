@@ -1,0 +1,4 @@
+dataset,data_label,rows,columns,missing_cells,exact_duplicates,source_url,inspected_at,status
+India Cyber Incident Synthetic Dataset,SYNTHETIC — NOT real incident records,2500,9,0,0,SYNTHETIC — generated from CERT-In Annual Report statistics,2026-10-25 18:19:40,OK
+CISA Known Exploited Vulnerabilities (KEV),PUBLIC — Real U.S. government data (CISA),1756,13,175,0,https://www.cisa.gov/known-exploited-vulnerabilities-catalog,2026-10-25 18:19:40,OK
+NIST NVD CVE Records (API 2.0 export),PUBLIC — Real U.S. NIST data,6135,9,696,0,https://nvd.nist.gov/developers/vulnerabilities,2026-10-25 18:19:40,OK

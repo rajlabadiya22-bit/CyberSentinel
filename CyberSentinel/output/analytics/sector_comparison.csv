@@ -1,0 +1,9 @@
+sector_name,incident_count,percentage,rank,data_source,top_threat_type,top_threat_count
+Government Services,624,25.64,1,SYNTHETIC,Other,182
+Banking & Finance,522,21.45,2,SYNTHETIC,Other,151
+Telecommunications,349,14.34,3,SYNTHETIC,Phishing,99
+Healthcare,306,12.57,4,SYNTHETIC,Other,92
+Power & Energy,245,10.07,5,SYNTHETIC,Phishing,70
+Transportation,163,6.7,6,SYNTHETIC,Other,57
+Other,115,4.72,7,SYNTHETIC,Phishing,35
+Defence (Public Data),110,4.52,8,SYNTHETIC,Other,35

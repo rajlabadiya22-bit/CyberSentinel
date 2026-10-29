@@ -1,0 +1,10 @@
+metric,value
+original_count,2500
+duplicates_removed,66
+bad_dates_excluded,0
+categories_remapped,339
+missing_values_filled,0
+final_count,2434
+records_lost,66
+retention_rate_pct,97.36
+cleaning_timestamp,2026-10-25 18:19:40

@@ -1,0 +1,10 @@
+sector_name,Critical,High,Low,Medium,Total,data_source
+Banking & Finance,53,132,126,211,522,SYNTHETIC
+Defence (Public Data),14,23,37,36,110,SYNTHETIC
+Government Services,49,164,171,240,624,SYNTHETIC
+Healthcare,28,74,79,125,306,SYNTHETIC
+Other,10,31,24,50,115,SYNTHETIC
+Power & Energy,27,63,60,95,245,SYNTHETIC
+Telecommunications,34,88,80,147,349,SYNTHETIC
+Transportation,20,46,35,62,163,SYNTHETIC
+Total,235,621,612,966,2434,SYNTHETIC

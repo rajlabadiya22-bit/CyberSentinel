@@ -1,0 +1,161 @@
+2026-10-26 20:46:06 | INFO     | Taxonomy loaded from: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\config\taxonomy.json
+2026-10-26 20:46:06 | INFO     | ============================================================
+2026-10-26 20:46:06 | INFO     | NCTIRAP PIPELINE STARTED
+2026-10-26 20:46:06 | INFO     | Input file : data\processed\incidents_cleaned.csv
+2026-10-26 20:46:06 | INFO     | Database   : C:\Users\rajla\Downloads\A - DAV\CyberSentinel\nctirap.db
+2026-10-26 20:46:06 | INFO     | Start time : 2026-10-26 20:46:06
+2026-10-26 20:46:06 | INFO     | ============================================================
+2026-10-26 20:46:06 | INFO     | [Step 1/8] Validating input file...
+2026-10-26 20:46:06 | INFO     | [Step 1/8] Input file found: data\processed\incidents_cleaned.csv
+2026-10-26 20:46:06 | INFO     | [Step 2/8] Loading and validating CSV columns...
+2026-10-26 20:46:06 | INFO     | Loading incident file: incidents_cleaned.csv
+2026-10-26 20:46:06 | INFO     |   Column validation passed. All 6 required columns are present.
+2026-10-26 20:46:06 | INFO     |   Import logged to import_log.txt
+2026-10-26 20:46:06 | INFO     |   [OK] Loaded 2,434 rows from incidents_cleaned.csv (9 columns)
+2026-10-26 20:46:06 | INFO     | [Step 2/8] Loaded 2434 raw records from incidents_cleaned.csv
+2026-10-26 20:46:06 | INFO     | [Step 3/8] Cleaning and standardising data...
+2026-10-26 20:46:06 | INFO     | Starting incident data cleaning pipeline...
+2026-10-26 20:46:06 | INFO     |   Input rows: 2,434
+2026-10-26 20:46:06 | INFO     |   Removed 16 duplicate records.
+2026-10-26 20:46:06 | INFO     |   Date standardisation complete for 'incident_date'. 2,418 records retained.
+2026-10-26 20:46:06 | INFO     |   Taxonomy mapping complete — all values already valid.
+2026-10-26 20:46:06 | INFO     |   No missing values found in optional columns.
+2026-10-26 20:46:06 | INFO     |   Output rows: 2,418
+2026-10-26 20:46:06 | INFO     | [Step 3/8] Cleaning complete. 2418 records remain (removed 16 duplicates, 0 bad-date records).
+2026-10-26 20:46:06 | INFO     | [Step 4/8] Connecting to database and storing cleaned data...
+2026-10-26 20:46:06 | INFO     | Connected to database: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\nctirap.db
+2026-10-26 20:46:06 | INFO     | Database tables initialised (or already exist).
+2026-10-26 20:46:06 | INFO     | Inserting cleaned records into the INCIDENTS table...
+2026-10-26 20:46:07 | INFO     |   Inserted 2,418 new incident records into INCIDENTS table (0 duplicates skipped, 0 FK errors skipped).
+2026-10-26 20:46:07 | INFO     | [Step 4/8] 2418 records inserted into database.
+2026-10-26 20:46:07 | INFO     | [Step 5/8] Computing historical analytics...
+2026-10-26 20:46:07 | INFO     | Computed temporal trends (4 years, 48 months).
+2026-10-26 20:46:07 | INFO     | Computed attack type distribution (5 distinct threat types).
+2026-10-26 20:46:07 | INFO     | [Step 5/8] Historical analytics complete.
+2026-10-26 20:46:07 | INFO     | [Step 6/8] Computing sector risk scores (ACRS) and national index (NCRI)...
+2026-10-26 20:46:07 | INFO     | Computed ACRS risk scores for 8 sectors.
+2026-10-26 20:46:07 | INFO     | Computed NCRI: 54.35 (High Risk)
+2026-10-26 20:46:07 | INFO     | [Step 6/8] Risk scoring complete. NCRI = 54.35
+2026-10-26 20:46:07 | INFO     |           [Academic Model — Not an Official Government Metric]
+2026-10-26 20:46:07 | INFO     | [Step 7/8] Exporting results to output/analytics/...
+2026-10-26 20:46:07 | INFO     | Safely exported: incident_trends.csv (48 rows)
+2026-10-26 20:46:07 | INFO     | Safely exported: threat_distribution.csv (5 rows)
+2026-10-26 20:46:07 | INFO     | Safely exported: sector_risk_scores.csv (8 rows)
+2026-10-26 20:46:07 | INFO     | Safely exported: national_risk_index.csv (1 rows)
+2026-10-26 20:46:07 | INFO     | All core analytics and risk CSVs exported to C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\analytics
+2026-10-26 20:46:07 | INFO     | [Step 7/8] CSV files written to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\analytics
+2026-10-26 20:46:07 | INFO     | [Step 8/8] Generating data quality report...
+2026-10-26 20:46:07 | WARNING  | generate_quality_report(): Not yet implemented.
+2026-10-26 20:46:07 | INFO     | [Step 8/8] Quality report written to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports
+2026-10-26 20:46:07 | INFO     | ============================================================
+2026-10-26 20:46:07 | INFO     | PIPELINE COMPLETED SUCCESSFULLY
+2026-10-26 20:46:07 | INFO     | Total time : 0.6 seconds
+2026-10-26 20:46:07 | INFO     | Next step  : Open Power BI Desktop and connect to output/analytics/
+2026-10-26 20:46:07 | INFO     | ============================================================
+2026-10-26 21:02:54 | INFO     | Taxonomy loaded from: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\config\taxonomy.json
+2026-10-26 21:02:54 | INFO     | ============================================================
+2026-10-26 21:02:54 | INFO     | NCTIRAP PIPELINE STARTED
+2026-10-26 21:02:54 | INFO     | Input file : data\processed\incidents_cleaned.csv
+2026-10-26 21:02:54 | INFO     | Database   : C:\Users\rajla\Downloads\A - DAV\CyberSentinel\database\nctirap.db
+2026-10-26 21:02:54 | INFO     | Start time : 2026-10-26 21:02:54
+2026-10-26 21:02:54 | INFO     | ============================================================
+2026-10-26 21:02:54 | INFO     | [Step 1/8] Validating input file...
+2026-10-26 21:02:54 | INFO     | [Step 1/8] Input file found: data\processed\incidents_cleaned.csv
+2026-10-26 21:02:54 | INFO     | [Step 2/8] Loading and validating CSV columns...
+2026-10-26 21:02:54 | INFO     | Loading incident file: incidents_cleaned.csv
+2026-10-26 21:02:54 | INFO     |   Column validation passed. All 6 required columns are present.
+2026-10-26 21:02:54 | INFO     |   Import logged to import_log.txt
+2026-10-26 21:02:54 | INFO     |   [OK] Loaded 2,434 rows from incidents_cleaned.csv (9 columns)
+2026-10-26 21:02:54 | INFO     | [Step 2/8] Loaded 2434 raw records from incidents_cleaned.csv
+2026-10-26 21:02:54 | INFO     | [Step 3/8] Cleaning and standardising data...
+2026-10-26 21:02:54 | INFO     | Starting incident data cleaning pipeline...
+2026-10-26 21:02:54 | INFO     |   Input rows: 2,434
+2026-10-26 21:02:54 | INFO     |   Removed 16 duplicate records.
+2026-10-26 21:02:54 | INFO     |   Date standardisation complete for 'incident_date'. 2,418 records retained.
+2026-10-26 21:02:54 | INFO     |   Taxonomy mapping complete — all values already valid.
+2026-10-26 21:02:54 | INFO     |   No missing values found in optional columns.
+2026-10-26 21:02:54 | INFO     |   Output rows: 2,418
+2026-10-26 21:02:54 | INFO     | [Step 3/8] Cleaning complete. 2418 records remain (removed 16 duplicates, 0 bad-date records).
+2026-10-26 21:02:54 | INFO     | [Step 4/8] Connecting to database and storing cleaned data...
+2026-10-26 21:02:55 | INFO     | Database schema initialised successfully using schema.sql
+2026-10-26 21:02:55 | INFO     | Starting incident data insertion into INCIDENTS table...
+2026-10-26 21:02:55 | INFO     | No new incidents to insert (2418 duplicates skipped).
+2026-10-26 21:02:55 | INFO     | [Step 4/8] 0 records inserted into database.
+2026-10-26 21:02:55 | INFO     | [Step 5/8] Computing historical analytics...
+2026-10-26 21:02:55 | INFO     | Computed temporal trends (4 years, 48 months).
+2026-10-26 21:02:55 | INFO     | Computed attack type distribution (5 distinct threat types).
+2026-10-26 21:02:55 | INFO     | [Step 5/8] Historical analytics complete.
+2026-10-26 21:02:55 | INFO     | [Step 6/8] Computing sector risk scores (ACRS) and national index (NCRI)...
+2026-10-26 21:02:55 | INFO     | Computed ACRS risk scores for 8 sectors.
+2026-10-26 21:02:55 | INFO     | Computed NCRI: 54.35 (High Risk)
+2026-10-26 21:02:55 | INFO     | [Step 6/8] Risk scoring complete. NCRI = 54.35
+2026-10-26 21:02:55 | INFO     |           [Academic Model — Not an Official Government Metric]
+2026-10-26 21:02:55 | INFO     | [Step 7/8] Exporting results to output/analytics/...
+2026-10-26 21:02:55 | INFO     | Safely exported: incident_trends.csv (48 rows)
+2026-10-26 21:02:55 | INFO     | Safely exported: threat_distribution.csv (5 rows)
+2026-10-26 21:02:55 | INFO     | Safely exported: sector_risk_scores.csv (8 rows)
+2026-10-26 21:02:55 | INFO     | Safely exported: national_risk_index.csv (1 rows)
+2026-10-26 21:02:55 | INFO     | All core analytics and risk CSVs exported to C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\analytics
+2026-10-26 21:02:55 | INFO     | [Step 7/8] CSV files written to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\analytics
+2026-10-26 21:02:55 | INFO     | [Step 8/8] Generating data quality report...
+2026-10-26 21:02:55 | WARNING  | generate_quality_report(): Not yet implemented.
+2026-10-26 21:02:55 | INFO     | [Step 8/8] Quality report written to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports
+2026-10-26 21:02:55 | INFO     | ============================================================
+2026-10-26 21:02:55 | INFO     | PIPELINE COMPLETED SUCCESSFULLY
+2026-10-26 21:02:55 | INFO     | Total time : 0.4 seconds
+2026-10-26 21:02:55 | INFO     | Next step  : Open Power BI Desktop and connect to output/analytics/
+2026-10-26 21:02:55 | INFO     | ============================================================
+2026-10-26 21:08:40 | INFO     | Taxonomy loaded from: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\config\taxonomy.json
+2026-10-26 21:08:40 | INFO     | ============================================================
+2026-10-26 21:08:40 | INFO     | NCTIRAP PIPELINE STARTED
+2026-10-26 21:08:40 | INFO     | Input file : data\processed\incidents_cleaned.csv
+2026-10-26 21:08:40 | INFO     | Database   : C:\Users\rajla\Downloads\A - DAV\CyberSentinel\database\nctirap.db
+2026-10-26 21:08:40 | INFO     | Start time : 2026-10-26 21:08:40
+2026-10-26 21:08:40 | INFO     | ============================================================
+2026-10-26 21:08:40 | INFO     | [Step 1/8] Validating input file...
+2026-10-26 21:08:40 | INFO     | [Step 1/8] Input file found: data\processed\incidents_cleaned.csv
+2026-10-26 21:08:40 | INFO     | [Step 2/8] Loading and validating CSV columns...
+2026-10-26 21:08:40 | INFO     | Loading incident file: incidents_cleaned.csv
+2026-10-26 21:08:40 | INFO     |   Column validation passed. All 6 required columns are present.
+2026-10-26 21:08:40 | INFO     |   Import logged to import_log.txt
+2026-10-26 21:08:40 | INFO     |   [OK] Loaded 2,434 rows from incidents_cleaned.csv (9 columns)
+2026-10-26 21:08:40 | INFO     | [Step 2/8] Loaded 2434 raw records from incidents_cleaned.csv
+2026-10-26 21:08:40 | INFO     | [Step 3/8] Cleaning and standardising data...
+2026-10-26 21:08:40 | INFO     | Starting incident data cleaning pipeline...
+2026-10-26 21:08:40 | INFO     |   Input rows: 2,434
+2026-10-26 21:08:40 | INFO     |   Removed 16 duplicate records.
+2026-10-26 21:08:40 | INFO     |   Date standardisation complete for 'incident_date'. 2,418 records retained.
+2026-10-26 21:08:40 | INFO     |   Taxonomy mapping complete — all values already valid.
+2026-10-26 21:08:40 | INFO     |   No missing values found in optional columns.
+2026-10-26 21:08:40 | INFO     |   Output rows: 2,418
+2026-10-26 21:08:40 | INFO     | [Step 3/8] Cleaning complete. 2418 records remain (removed 16 duplicates, 0 bad-date records).
+2026-10-26 21:08:40 | INFO     | [Step 4/8] Connecting to database and storing cleaned data...
+2026-10-26 21:08:40 | INFO     | Database schema initialised successfully using schema.sql
+2026-10-26 21:08:40 | INFO     | Starting incident data insertion into INCIDENTS table...
+2026-10-26 21:08:40 | INFO     | No new incidents to insert (2418 duplicates skipped).
+2026-10-26 21:08:40 | INFO     | [Step 4/8] 0 records inserted into database.
+2026-10-26 21:08:40 | INFO     | [Step 5/8] Computing historical analytics...
+2026-10-26 21:08:40 | INFO     | Computed temporal trends (4 years, 48 months).
+2026-10-26 21:08:40 | INFO     | Computed attack type distribution (5 distinct threat types).
+2026-10-26 21:08:40 | INFO     | [Step 5/8] Historical analytics complete.
+2026-10-26 21:08:40 | INFO     | [Step 6/8] Computing sector risk scores (ACRS) and national index (NCRI)...
+2026-10-26 21:08:40 | INFO     | Computed ACRS risk scores for 8 sectors.
+2026-10-26 21:08:40 | INFO     | Computed NCRI: 54.35 (High Risk)
+2026-10-26 21:08:40 | INFO     | [Step 6/8] Risk scoring complete. NCRI = 54.35
+2026-10-26 21:08:40 | INFO     |           [Academic Model — Not an Official Government Metric]
+2026-10-26 21:08:40 | INFO     | [Step 7/8] Exporting results to output/analytics/...
+2026-10-26 21:08:40 | INFO     | Safely exported: incident_trends.csv (48 rows)
+2026-10-26 21:08:40 | INFO     | Safely exported: threat_distribution.csv (5 rows)
+2026-10-26 21:08:40 | INFO     | Safely exported: sector_risk_scores.csv (8 rows)
+2026-10-26 21:08:40 | INFO     | Safely exported: national_risk_index.csv (1 rows)
+2026-10-26 21:08:40 | INFO     | All core analytics and risk CSVs exported to C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\analytics
+2026-10-26 21:08:40 | INFO     | [Step 7/8] CSV files written to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\analytics
+2026-10-26 21:08:40 | INFO     | [Step 8/8] Generating data quality report...
+2026-10-26 21:08:40 | INFO     | Safely exported: preprocessing_summary.csv (1 rows)
+2026-10-26 21:08:40 | INFO     | Quality report saved to C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports\preprocessing_summary.csv
+2026-10-26 21:08:40 | INFO     | [Step 8/8] Quality report written to: C:\Users\rajla\Downloads\A - DAV\CyberSentinel\output\reports
+2026-10-26 21:08:40 | INFO     | ============================================================
+2026-10-26 21:08:40 | INFO     | PIPELINE COMPLETED SUCCESSFULLY
+2026-10-26 21:08:40 | INFO     | Total time : 0.4 seconds
+2026-10-26 21:08:40 | INFO     | Next step  : Open Power BI Desktop and connect to output/analytics/
+2026-10-26 21:08:40 | INFO     | ============================================================

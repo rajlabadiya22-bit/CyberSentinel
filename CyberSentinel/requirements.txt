@@ -1,0 +1,33 @@
+# Python dependencies for NCTIRAP
+# National Cyber Threat Intelligence & Risk Analytics Platform
+#
+# Install all dependencies by running:
+#   pip install -r requirements.txt
+#
+# These are the ONLY external libraries needed for the initial implementation.
+# No machine learning, no web server, no complex frameworks.
+
+# ─── Core Data Analysis ───────────────────────────────────────────────────────
+pandas>=2.0.0       # For reading CSV/Excel files and manipulating data as tables
+numpy>=1.24.0       # For mathematical operations (used in risk score calculations)
+
+# ─── Excel File Support ───────────────────────────────────────────────────────
+openpyxl>=3.1.2     # Required by pandas to read .xlsx Excel files
+
+# ─── HTTP / Data Collection ───────────────────────────────────────────────────
+requests>=2.31.0    # For downloading datasets from CISA KEV and NVD CVE APIs.
+                    # Used exclusively in src/collect_data.py.
+
+# ─── Web Dashboard Interface (FE-001) ─────────────────────────────────────────
+flask>=3.0.0        # Lightweight WSGI web framework for interactive SOC dashboard
+
+# ─── (Built-in — No Install Needed) ──────────────────────────────────────────
+# sqlite3     → Comes with Python. Used for the local database.
+# json        → Comes with Python. Used to read taxonomy.json.
+# pathlib     → Comes with Python. Used for cross-platform file paths.
+# logging     → Comes with Python. Used for writing log files.
+# argparse    → Comes with Python. Used for command-line arguments in main.py.
+# datetime    → Comes with Python. Used for date standardisation.
+# csv         → Comes with Python. Used for writing output CSV files.
+# random      → Comes with Python. Used for synthetic data generation.
+# time        → Comes with Python. Used for API rate-limit delays.

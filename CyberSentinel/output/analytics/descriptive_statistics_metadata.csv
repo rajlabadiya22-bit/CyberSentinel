@@ -1,0 +1,16 @@
+category,dataset_name,data_provenance,metric,value,notes
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,incident_time_period_start,2021-01-03,Earliest incident timestamp in dataset
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,incident_time_period_end,2024-12-29,Latest incident timestamp in dataset
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,total_incidents_analyzed,2434,Valid deduplicated incident records
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,distinct_threat_types,5,Unique attack types identified
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,distinct_sectors_monitored,8,Critical infrastructure sectors monitored
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,mean_monthly_incident_volume,50.71,Average incidents reported per month
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,std_monthly_incident_volume,12.5,Standard deviation across monthly incident counts
+Incident Intelligence,India Critical Infrastructure Cyber Incidents,SYNTHETIC,predominant_threat_type,Other (28.92%),Most frequent cyber threat vector
+Vulnerability Intelligence,NIST National Vulnerability Database (CVE 2.0),PUBLIC,cve_time_period_start,2021-11-03,Earliest CVE publication date
+Vulnerability Intelligence,NIST National Vulnerability Database (CVE 2.0),PUBLIC,cve_time_period_end,2026-10-23,Latest CVE publication date
+Vulnerability Intelligence,NIST National Vulnerability Database (CVE 2.0),PUBLIC,total_vulnerabilities_analyzed,7861,Total public CVE records
+Vulnerability Intelligence,NIST National Vulnerability Database (CVE 2.0),PUBLIC,mean_cvss_base_score,7.52,Mean base severity score on a 0.0–10.0 scale
+Vulnerability Intelligence,CISA Known Exploited Vulnerabilities (KEV),PUBLIC,actively_exploited_vulnerabilities,1756,Vulnerabilities with confirmed active exploitation in the wild
+Methodological Governance,All Datasets,ACADEMIC PROTOCOL,correlation_causation_policy,Non-Causation Enforced,Statistical frequency does NOT prove causation. Frequencies reflect sample reporting patterns.
+Methodological Governance,All Datasets,ACADEMIC PROTOCOL,data_segregation_policy,Strict Segregation,Incident statistics and vulnerability intelligence are maintained in segregated tables.

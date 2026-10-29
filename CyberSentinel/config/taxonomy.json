@@ -1,0 +1,105 @@
+{
+  "_comment": "NCTIRAP Taxonomy Configuration File (config/taxonomy.json)",
+  "_description": "This file defines all controlled vocabularies, weights, and thresholds used by the system. You can edit values here without changing any Python code.",
+  "_version": "1.0",
+
+  "threat_types": [
+    "Ransomware",
+    "Phishing",
+    "DDoS",
+    "Data Breach",
+    "Malware",
+    "SQL Injection",
+    "Zero-Day Exploit",
+    "Supply Chain Attack",
+    "Insider Threat",
+    "Social Engineering",
+    "Other"
+  ],
+
+  "target_sectors": [
+    "Power & Energy",
+    "Telecommunications",
+    "Banking & Finance",
+    "Government Services",
+    "Healthcare",
+    "Transportation",
+    "Defence (Public Data)",
+    "Other"
+  ],
+
+  "severity_levels": {
+    "Critical": 4,
+    "High": 3,
+    "Medium": 2,
+    "Low": 1,
+    "Unknown": 0
+  },
+
+  "sector_criticality_weights": {
+    "_comment": "These weights represent how critical each sector is to national functioning. They are project-defined academic values — NOT official government assessments. All weights must sum to 1.00 (excluding 'Other').",
+    "Power & Energy": 0.20,
+    "Banking & Finance": 0.18,
+    "Telecommunications": 0.16,
+    "Government Services": 0.15,
+    "Healthcare": 0.13,
+    "Transportation": 0.10,
+    "Defence (Public Data)": 0.08,
+    "Other": 0.00
+  },
+
+  "acrs_formula_weights": {
+    "_comment": "Weights used in the ACRS formula: ACRS = alpha*NIFS + beta*WSS + gamma*(SCW*100). Must sum to 1.00.",
+    "alpha": 0.40,
+    "beta": 0.40,
+    "gamma": 0.20
+  },
+
+  "risk_categories": {
+    "_comment": "ACRS thresholds for risk classification. Range is 0-100.",
+    "Critical Risk": { "min": 75, "max": 100 },
+    "High Risk":     { "min": 50, "max": 74 },
+    "Moderate Risk": { "min": 25, "max": 49 },
+    "Low Risk":      { "min": 0,  "max": 24 }
+  },
+
+  "indian_states_and_uts": [
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+    "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
+    "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+    "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+    "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu",
+    "Delhi", "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry",
+    "Multiple States", "National", "Unknown"
+  ],
+
+  "mandatory_incident_columns": [
+    "incident_id",
+    "incident_date",
+    "threat_type",
+    "target_sector",
+    "severity",
+    "data_source"
+  ],
+
+  "mandatory_cve_columns": [
+    "cve_id",
+    "published_date",
+    "cvss_base_score",
+    "cvss_severity"
+  ],
+
+  "cvss_severity_thresholds": {
+    "_comment": "CVSS v3.x base score ranges for severity classification.",
+    "Critical": { "min": 9.0, "max": 10.0 },
+    "High":     { "min": 7.0, "max": 8.9 },
+    "Medium":   { "min": 4.0, "max": 6.9 },
+    "Low":      { "min": 0.0, "max": 3.9 }
+  },
+
+  "data_source_values": {
+    "_comment": "Allowed values for the data_source field. SYNTHETIC must be used for all non-real data.",
+    "allowed": ["PUBLIC", "SYNTHETIC"]
+  }
+}

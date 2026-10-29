@@ -1,0 +1,116 @@
+2026-10-25 18:09:56  INFO      
+2026-10-25 18:09:56  INFO      ##############################################################
+2026-10-25 18:09:56  INFO        NCTIRAP Data Collection
+2026-10-25 18:09:56  INFO        Started: 2026-10-25 18:09:56
+2026-10-25 18:09:56  INFO      ##############################################################
+2026-10-25 18:09:56  INFO      
+2026-10-25 18:09:56  INFO      DATASET 1: CISA KEV — SKIPPED (--skip-kev flag)
+2026-10-25 18:09:56  INFO      DATASET 2: NVD CVE — SKIPPED (--skip-nvd flag)
+2026-10-25 18:09:56  INFO      ============================================================
+2026-10-25 18:09:56  INFO      DATASET 3: India Cyber Incident Synthetic Dataset
+2026-10-25 18:09:56  INFO      Basis  : CERT-In Annual Reports (public aggregate stats)
+2026-10-25 18:09:56  INFO      Label  : SYNTHETIC — NOT real incident records
+2026-10-25 18:09:56  INFO      ============================================================
+2026-10-25 18:09:56  INFO        [OK]   synthetic_india_incidents.csv  (489,575 bytes)
+2026-10-25 18:09:56  INFO        Synthetic rows generated : 2,500
+2026-10-25 18:09:56  INFO        Year range               : 2021 – 2024
+2026-10-25 18:09:56  INFO        All rows labelled        : data_source = SYNTHETIC
+2026-10-25 18:09:56  INFO        Saved to                 : C:\Users\rajla\Downloads\A - DAV\CyberSentinel\data\synthetic\synthetic_india_incidents.csv
+2026-10-25 18:09:56  INFO      
+2026-10-25 18:09:56  INFO      ##############################################################
+2026-10-25 18:09:56  INFO        COLLECTION SUMMARY
+2026-10-25 18:09:56  INFO      ##############################################################
+2026-10-25 18:09:56  INFO        [SKIP] CISA KEV         -> data/raw/cisa_kev.csv
+2026-10-25 18:09:56  INFO        [SKIP] NVD CVE          -> data/raw/nvd_cve.csv
+2026-10-25 18:09:56  INFO        [OK]   India Synthetic  -> data/synthetic/synthetic_india_incidents.csv
+2026-10-25 18:09:56  INFO      
+2026-10-25 18:09:56  WARNING     No real public dataset was downloaded successfully. Check your internet connection and try again.
+2026-10-25 18:09:56  INFO        Finished: 2026-10-25 18:09:56
+2026-10-25 18:09:56  INFO        See logs/data_collection.log for full details.
+2026-10-25 18:09:56  INFO      ##############################################################
+2026-10-25 18:09:56  INFO      
+2026-10-25 18:10:08  INFO      
+2026-10-25 18:10:08  INFO      ##############################################################
+2026-10-25 18:10:08  INFO        NCTIRAP Data Collection
+2026-10-25 18:10:08  INFO        Started: 2026-10-25 18:10:08
+2026-10-25 18:10:08  INFO      ##############################################################
+2026-10-25 18:10:08  INFO      
+2026-10-25 18:10:08  INFO      ============================================================
+2026-10-25 18:10:08  INFO      DATASET 1: CISA Known Exploited Vulnerabilities (KEV)
+2026-10-25 18:10:08  INFO      Source : https://www.cisa.gov
+2026-10-25 18:10:08  INFO      Auth   : None required
+2026-10-25 18:10:08  INFO      ============================================================
+2026-10-25 18:10:08  INFO        Downloading: https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv
+2026-10-25 18:10:09  INFO        [OK]   cisa_kev.csv  (1,073,722 bytes)
+2026-10-25 18:10:09  INFO        Records downloaded : 1,756
+2026-10-25 18:10:09  INFO        Columns            : ['cveID', 'vendorProject', 'product', 'vulnerabilityName', 'dateAdded', 'shortDescription', 'requiredAction', 'dueDate', 'knownRansomwareCampaignUse', 'forensicTriage', 'notes', 'cwes']
+2026-10-25 18:10:09  INFO        Date range         : 2021-11-03 to 2026-10-23
+2026-10-25 18:10:09  INFO        Saved to           : C:\Users\rajla\Downloads\A - DAV\CyberSentinel\data\raw\cisa_kev.csv
+2026-10-25 18:10:09  INFO      ============================================================
+2026-10-25 18:10:09  INFO      DATASET 2: NIST NVD CVE API 2.0
+2026-10-25 18:10:09  INFO      Source : https://services.nvd.nist.gov/rest/json/cves/2.0
+2026-10-25 18:10:09  INFO      Auth   : No API key (public rate limit: 5 req/30 sec)
+2026-10-25 18:10:09  INFO               For faster download, get a free key at:
+2026-10-25 18:10:09  INFO               https://nvd.nist.gov/developers/request-an-api-key
+2026-10-25 18:10:09  INFO      ============================================================
+2026-10-25 18:10:09  INFO        Date range : 2024-01-01 to 2024-12-31
+2026-10-25 18:10:09  INFO        Fetching CVE records (this may take a few minutes)...
+2026-10-25 18:10:09  INFO        Requesting records 0 – 1999 ...
+2026-10-25 18:10:11  ERROR       [FAIL] NVD API HTTP error: 404 Client Error: Not Found for url: https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2024-01-01T00%3A00%3A00.000&pubEndDate=2024-12-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=0
+2026-10-25 18:10:11  ERROR       [FAIL] No CVE records were collected.
+2026-10-25 18:10:11  INFO      DATASET 3: India Synthetic — SKIPPED (--skip-synthetic flag)
+2026-10-25 18:10:11  INFO      
+2026-10-25 18:10:11  INFO      ##############################################################
+2026-10-25 18:10:11  INFO        COLLECTION SUMMARY
+2026-10-25 18:10:11  INFO      ##############################################################
+2026-10-25 18:10:11  INFO        [OK]   CISA KEV         -> data/raw/cisa_kev.csv
+2026-10-25 18:10:11  INFO        [FAIL] NVD CVE          -> data/raw/nvd_cve.csv
+2026-10-25 18:10:11  INFO        [SKIP] India Synthetic  -> data/synthetic/synthetic_india_incidents.csv
+2026-10-25 18:10:11  INFO      
+2026-10-25 18:10:11  INFO        Finished: 2026-10-25 18:10:11
+2026-10-25 18:10:11  INFO        See logs/data_collection.log for full details.
+2026-10-25 18:10:11  INFO      ##############################################################
+2026-10-25 18:10:11  INFO      
+2026-10-25 18:12:06  INFO      
+2026-10-25 18:12:06  INFO      ##############################################################
+2026-10-25 18:12:06  INFO        NCTIRAP Data Collection
+2026-10-25 18:12:06  INFO        Started: 2026-10-25 18:12:06
+2026-10-25 18:12:06  INFO      ##############################################################
+2026-10-25 18:12:06  INFO      
+2026-10-25 18:12:06  INFO      DATASET 1: CISA KEV — SKIPPED (--skip-kev flag)
+2026-10-25 18:12:06  INFO      ============================================================
+2026-10-25 18:12:06  INFO      DATASET 2: NIST NVD CVE API 2.0
+2026-10-25 18:12:06  INFO      Source : https://services.nvd.nist.gov/rest/json/cves/2.0
+2026-10-25 18:12:06  INFO      Auth   : No API key (public rate limit: 5 req/30 sec)
+2026-10-25 18:12:06  INFO               For faster download, get a free key at:
+2026-10-25 18:12:06  INFO               https://nvd.nist.gov/developers/request-an-api-key
+2026-10-25 18:12:06  INFO      ============================================================
+2026-10-25 18:12:06  INFO        Date range : 2024-09-01 to 2024-10-31
+2026-10-25 18:12:06  INFO        Requesting records 0 – 1999 ...
+2026-10-25 18:12:10  INFO        CVEs in chunk: 6,135
+2026-10-25 18:12:10  INFO        Collected so far: 2,000 records
+2026-10-25 18:12:10  INFO        Waiting 6.5 s (rate limit)...
+2026-10-25 18:12:16  INFO        Requesting records 2000 – 3999 ...
+2026-10-25 18:12:21  INFO        Collected so far: 4,000 records
+2026-10-25 18:12:21  INFO        Waiting 6.5 s (rate limit)...
+2026-10-25 18:12:27  INFO        Requesting records 4000 – 5999 ...
+2026-10-25 18:12:33  INFO        Collected so far: 6,000 records
+2026-10-25 18:12:33  INFO        Waiting 6.5 s (rate limit)...
+2026-10-25 18:12:39  INFO        Requesting records 6000 – 7999 ...
+2026-10-25 18:12:42  INFO        Collected so far: 6,135 records
+2026-10-25 18:12:43  INFO        [OK]   nvd_cve.csv  (2,573,637 bytes)
+2026-10-25 18:12:43  INFO        Records saved      : 6,135
+2026-10-25 18:12:43  INFO        Saved to           : C:\Users\rajla\Downloads\A - DAV\CyberSentinel\data\raw\nvd_cve.csv
+2026-10-25 18:12:43  INFO      DATASET 3: India Synthetic — SKIPPED (--skip-synthetic flag)
+2026-10-25 18:12:43  INFO      
+2026-10-25 18:12:43  INFO      ##############################################################
+2026-10-25 18:12:43  INFO        COLLECTION SUMMARY
+2026-10-25 18:12:43  INFO      ##############################################################
+2026-10-25 18:12:43  INFO        [SKIP] CISA KEV         -> data/raw/cisa_kev.csv
+2026-10-25 18:12:43  INFO        [OK]   NVD CVE          -> data/raw/nvd_cve.csv
+2026-10-25 18:12:43  INFO        [SKIP] India Synthetic  -> data/synthetic/synthetic_india_incidents.csv
+2026-10-25 18:12:43  INFO      
+2026-10-25 18:12:43  INFO        Finished: 2026-10-25 18:12:43
+2026-10-25 18:12:43  INFO        See logs/data_collection.log for full details.
+2026-10-25 18:12:43  INFO      ##############################################################
+2026-10-25 18:12:43  INFO      

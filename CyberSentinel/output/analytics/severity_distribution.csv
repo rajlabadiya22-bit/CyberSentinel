@@ -1,0 +1,5 @@
+severity,incident_count,percentage,data_source
+Critical,235,9.65,SYNTHETIC
+High,621,25.51,SYNTHETIC
+Medium,966,39.69,SYNTHETIC
+Low,612,25.14,SYNTHETIC

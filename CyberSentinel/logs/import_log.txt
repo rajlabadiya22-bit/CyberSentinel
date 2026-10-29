@@ -1,0 +1,10 @@
+2026-10-25 18:09:56 | DATASET: INDIA_SYNTHETIC | FILE: synthetic_india_incidents.csv | ROWS: 2500 | STATUS: SUCCESS | NOTES: data_source=SYNTHETIC; basis=CERT-In Annual Report public statistics
+2026-10-25 18:10:09 | DATASET: CISA_KEV | FILE: cisa_kev.csv | ROWS: 1756 | STATUS: SUCCESS | NOTES: Public U.S. CISA data; data_source=PUBLIC
+2026-10-25 18:12:43 | DATASET: NVD_CVE | FILE: nvd_cve.csv | ROWS: 6135 | STATUS: SUCCESS | NOTES: NVD API date range 2024-09-01 to 2024-10-31; data_source=PUBLIC
+2026-10-25 18:19:20 | FILE: synthetic_india_incidents.csv | ROWS: 2500 | STATUS: SUCCESS
+2026-10-25 18:19:40 | FILE: synthetic_india_incidents.csv | ROWS: 2500 | STATUS: SUCCESS
+2026-10-25 18:19:40 | FILE: cisa_kev.csv | ROWS: 1756 | STATUS: SUCCESS
+2026-10-25 18:19:40 | FILE: nvd_cve.csv | ROWS: 6135 | STATUS: SUCCESS
+2026-10-26 20:46:06 | FILE: incidents_cleaned.csv | ROWS: 2434 | STATUS: SUCCESS
+2026-10-26 21:02:54 | FILE: incidents_cleaned.csv | ROWS: 2434 | STATUS: SUCCESS
+2026-10-26 21:08:40 | FILE: incidents_cleaned.csv | ROWS: 2434 | STATUS: SUCCESS

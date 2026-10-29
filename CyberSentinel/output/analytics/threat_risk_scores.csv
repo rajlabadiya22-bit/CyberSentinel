@@ -1,0 +1,6 @@
+threat_type,incident_count,frequency_score,severity_score,sectors_targeted_count,sector_breadth_score,threat_risk_score,threat_risk_category,contributing_factors,disclaimer,rank
+Other,704,100.0,37.5,7,100.0,75.0,Critical Risk,Freq: 100.0 | Sev: 37.5 | Sectors: 7/7,Academic Threat Model,1
+Phishing,666,94.6,41.29,7,100.0,74.36,High Risk,Freq: 94.6 | Sev: 41.3 | Sectors: 7/7,Academic Threat Model,2
+Malware,519,73.72,39.31,7,100.0,65.21,High Risk,Freq: 73.7 | Sev: 39.3 | Sectors: 7/7,Academic Threat Model,3
+Ransomware,282,40.06,42.32,7,100.0,52.95,High Risk,Freq: 40.1 | Sev: 42.3 | Sectors: 7/7,Academic Threat Model,4
+Data Breach,263,37.36,41.32,7,100.0,51.47,High Risk,Freq: 37.4 | Sev: 41.3 | Sectors: 7/7,Academic Threat Model,5

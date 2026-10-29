@@ -1,0 +1,11 @@
+parameter,value,notes
+model_name,Academic Cyber Risk Score (ACRS),Composite sector risk metric
+national_index_name,National Cyber Risk Index (NCRI),Sector Criticality Weighted National Score
+frequency_weight_alpha,0.40,Relative volume weight
+severity_weight_beta,0.40,Severity profile weight
+criticality_weight_gamma,0.20,Sector dependency weight
+category_critical_risk,75 - 100,Severe threat activity and high criticality
+category_high_risk,50 - 74,Elevated threat activity
+category_moderate_risk,25 - 49,Moderate threat activity
+category_low_risk,0 - 24,Low threat activity
+statutory_disclaimer,Academic Model Only,Not an official government or regulatory metric
